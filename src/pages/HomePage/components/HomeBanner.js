@@ -43,7 +43,7 @@ const HomeBanner = () => {
     return (
         <Grommet theme={customAnchor}>
             <Box flex overflow='auto' background="light-2" pad="large" direction='row-responsive' gap='small' >
-                <Box flex overflow='auto' wrap pad="large" wrap>
+                <Box flex overflow='auto' wrap pad="large">
                     <Box wrap flex>
                         <Heading size="xlarge" level="2" margin='none' >Te ayudamos con tu contabilidad</Heading>
                     </Box>
