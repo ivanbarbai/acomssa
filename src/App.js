@@ -1,6 +1,6 @@
 //Modules
 import { Grommet, Main } from 'grommet';
-import { Route, Switch, Router } from 'react-router';
+import { Route, Switch } from 'react-router';
 import { AnimatePresence } from 'framer-motion';
 
 //Components

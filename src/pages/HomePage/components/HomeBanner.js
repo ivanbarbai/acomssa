@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Grommet, Box, Heading, Paragraph, Text, Anchor, Form, grommet, FormField, TextInput, Button, Grid, Image } from 'grommet'
+import { Grommet, Box, Heading, Paragraph, Text, Anchor, Form, grommet, FormField, TextInput, Button } from 'grommet'
 import { FormNextLink } from 'grommet-icons'
 
 import { deepMerge } from 'grommet/utils';
@@ -52,7 +52,7 @@ const HomeBanner = () => {
                         <Paragraph>Contamos con </Paragraph>
                     </Box>
                     <Anchor href="/servicios">
-                        <Box elevation='small' direction="row" style={{ borderTopRightRadius: '14px', borderBottomLeftRadius: '14px', }} pad="small" background="status-ok" justify='stretch' align='center' alignContent='center'>
+                        <Box flex width='70%' elevation='small' direction="row" style={{ borderTopRightRadius: '14px', borderBottomLeftRadius: '14px', }} pad="small" background="status-ok">
                             <FormNextLink color='light-1' size="medium" style={{ marginRight: '10px' }} />
                             <Text color="light-1" style={{ fontWeight: 'bold' }} >Conoce nuestros servicios</Text>
                         </Box>
@@ -87,7 +87,7 @@ const HomeBanner = () => {
                                     <TextInput id='phone-input-id' name='phonenumber' style={{ color: '#ffffff', padding: '0', fontSize: '14px', fontWeight: '600' }} />
                                 </FormField>
                             </Box>
-                            <Box direction="row-responsive" gap="medium" pad='small' >
+                            <Box justify='center' direction="row-responsive" gap="medium" pad='small' >
                                 <Button type="submit" color="light-1" size='small' style={{ backgroundColor: '#ffffff', color: '#5587E6' }} label='Contactar' />
                                 <Button type="reset" color="light-1" size='small' style={{ backgroundColor: '#5587E6', color: '#ffffff' }} label='Borrar' />
                             </Box>
