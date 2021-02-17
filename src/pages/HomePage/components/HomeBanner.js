@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Grommet, Box, Heading, Paragraph, Text, Anchor, Form, grommet, FormField, TextInput, Button } from 'grommet'
+import { Grommet, Box, Heading, Text, Anchor, Form, grommet, FormField, TextInput, Button } from 'grommet'
 import { FormNextLink } from 'grommet-icons'
 
 import { deepMerge } from 'grommet/utils';
@@ -11,6 +11,7 @@ const customAnchor = deepMerge(grommet, {
         hover: {
             textDecoration: 'none',
         },
+        color:'white'
     },
     heading: {
         color: '#ffffff',
@@ -45,23 +46,19 @@ const HomeBanner = () => {
 
     return (
         <Grommet theme={customAnchor}>
-            <Box flex overflow='auto' background="#5587E6" pad="large" direction='row-responsive' gap='small' >
-                <Box flex overflow='auto' wrap pad="large" justify='between' alignContent='around'>
+            <Box flex overflow='auto' background="#4066AD" pad="large" direction='row-responsive' gap='small' >
+                <Box flex overflow='auto' wrap pad="small" justify='between' alignContent='around'>
                     <Box wrap flex>
                         <Heading size="xlarge" level="2" margin='none' >Te ayudamos con tu contabilidad</Heading>
-                    </Box>
-                    <Box wrap>
                         <Heading level="4" >Realizamos una alta gama de servicios especializados en la asesoría comercial contable, financiera y estructura organizacional.</Heading>
                     </Box>
-                    <Anchor href="/servicios">
-                        <Box flex style={{ maxWidth: '360px' }} direction="row" round='small' pad="small" background="status-ok">
-                            <FormNextLink color='light-1' size="medium" style={{ marginRight: '10px' }} />
-                            <Text color="light-1">Conoce nuestros servicios</Text>
-                        </Box>
-                    </Anchor>
+                    <Box pad='small' style={{ maxWidth: '360px' }} round='small' background="status-ok" >
+                        <Anchor href="/servicios" label='Conoce nuestros Servicios' icon={<FormNextLink color='light-1' size="medium" />} />
+                    </Box>
+
                 </Box>
 
-                <Box flex wrap overflow='auto' elevation="large" round="medium" direction="row-responsive" >
+                <Box flex wrap overflow='auto' round="medium" direction="row-responsive" >
                     <Box background="light-1" pad="large" overflow='auto'>
                         <Form
                             value={value}

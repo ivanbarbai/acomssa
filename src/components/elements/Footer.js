@@ -19,7 +19,7 @@ const customAnchor = deepMerge(grommet, {
 const Footed = () => {
     return (
         <Grommet theme={customAnchor}>
-            <Footer background="#5966F0" pad={{ horizontal: 'large', vertical: 'small' }}>
+            <Footer background="#4F7ED6" pad={{ horizontal: 'large', vertical: 'small' }}>
                 <Box
                     direction="row"
                     gap="small"

@@ -23,7 +23,7 @@ const customHeader = deepMerge(grommet, {
 const Headed = () => {
     return (
         <Grommet theme={customHeader}>
-            <Header pad="large"  background="#5587E6">
+            <Header pad="large"  background="#4066AD">
                 <Anchor
                     href="/"
                     label="Acomssa"
