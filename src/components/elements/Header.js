@@ -10,17 +10,23 @@ const customHeader = deepMerge(grommet, {
         hover: {
             textDecoration: 'none',
         },
+        color:'#ffffff',
+        heading:{
+            color:'#ffffff'
+        },
+        text:{
+            color:'#ffffff'
+        }
     },
 })
 
 const Headed = () => {
     return (
         <Grommet theme={customHeader}>
-            <Header pad="large" height="xsmall" background='light-1'>
+            <Header pad="large"  background="#5587E6">
                 <Anchor
                     href="/"
                     label="Acomssa"
-                    color="dark-1"
                 />
                 <ResponsiveContext.Consumer>
                     {size =>
@@ -29,7 +35,7 @@ const Headed = () => {
                                 <Menu
                                     a11yTitle="Navigation Menu"
                                     dropProps={{ align: { top: 'bottom', right: 'right' } }}
-                                    icon={<MenuIcon color='dark-1' />}
+                                    icon={<MenuIcon color='light-1' />}
                                     items={[
                                         {
                                             label: <Box pad="medium">Servicios</Box>,
@@ -48,9 +54,9 @@ const Headed = () => {
                             </Box>
                         ) : (
                                 <Box justify="end" direction="row" gap="medium">
-                                    <Anchor href="/servicios" label="Servicios" color="dark-1" size="small" />
-                                    <Anchor href="/nosotros" label="Nosotros" color="dark-1" size="small" />
-                                    <Anchor href="/contacto" label="Contacto" color="dark-1" size="small" />
+                                    <Anchor href="/servicios" label="Servicios" size="small" />
+                                    <Anchor href="/nosotros" label="Nosotros"  size="small" />
+                                    <Anchor href="/contacto" label="Contacto"  size="small" />
                                 </Box>)}
                 </ResponsiveContext.Consumer>
             </Header>

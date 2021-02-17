@@ -1,7 +1,7 @@
 //Modules
 import { Grommet, Main } from 'grommet';
 import { Route, Switch } from 'react-router';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 //Components
 import Headed from './components/elements/Header';
@@ -19,6 +19,18 @@ const theme = {
       family: 'Helvetica',
     },
   },
+}
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+  },
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  }
 }
 
 function App() {
