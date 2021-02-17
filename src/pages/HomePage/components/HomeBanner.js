@@ -48,12 +48,12 @@ const HomeBanner = () => {
                         <Heading size="xlarge" level="2" margin='none' >Te ayudamos con tu contabilidad</Heading>
                     </Box>
                     <Box wrap>
-                        <Heading level="4" > Realizamos una alta gama de servicios especializados en la asesoría comercial contable, financiera y organizacional.</Heading>
-                        <Paragraph></Paragraph>
-                        <Paragraph>Trabajamos con PyMEs, Personas físicas y morales.</Paragraph>
+                        <Heading level="4" >Realizamos una alta gama de servicios especializados en la asesoría comercial contable, financiera y estructura organizacional.</Heading>
+                        <Paragraph>Te facilitamos los procesos contables ya seas una PyME o Persona física.</Paragraph>
+                        <Paragraph>Comunicate con nosotros para más información.</Paragraph>
                     </Box>
                     <Anchor href="/servicios">
-                        <Box flex style={{maxWidth:'360px'}} elevation='small' direction="row" round='small' pad="small" background="status-ok">
+                        <Box flex style={{ maxWidth: '360px' }} elevation='small' direction="row" round='small' pad="small" background="status-ok">
                             <FormNextLink color='light-1' size="medium" style={{ marginRight: '10px' }} />
                             <Text color="light-1">Conoce nuestros servicios</Text>
                         </Box>

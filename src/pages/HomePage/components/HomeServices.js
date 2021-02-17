@@ -1,10 +1,14 @@
 import React from 'react'
+import { Box, Paragraph, Text, Heading } from 'grommet'
 
 const HomeServices = () => {
     return (
-        <div>
-            
-        </div>
+        <Box>
+            <Box>
+            </Box>
+            <Box>
+            </Box>
+        </Box>
     )
 }
 
