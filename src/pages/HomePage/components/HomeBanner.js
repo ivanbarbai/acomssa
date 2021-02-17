@@ -42,19 +42,20 @@ const HomeBanner = () => {
 
     return (
         <Grommet theme={customAnchor}>
-            <Box flex overflow='auto' background="light-2" pad="large" direction='row-responsive' gap='small' >
-                <Box flex overflow='auto' wrap pad="large">
+            <Box margin='large' flex overflow='auto' background="light-2" round='medium' pad="large" direction='row-responsive' gap='small' >
+                <Box flex overflow='auto' wrap pad="large" justify='around' alignContent='around'>
                     <Box wrap flex>
                         <Heading size="xlarge" level="2" margin='none' >Te ayudamos con tu contabilidad</Heading>
                     </Box>
                     <Box wrap>
-                        <Heading level="4" > Realizamos una alta gama de servicios especializados en la asesoría comercial contable.</Heading>
-                        <Paragraph>Contamos con </Paragraph>
+                        <Heading level="4" > Realizamos una alta gama de servicios especializados en la asesoría comercial contable, financiera y organizacional.</Heading>
+                        <Paragraph></Paragraph>
+                        <Paragraph>Trabajamos con PyMEs, Personas físicas y morales.</Paragraph>
                     </Box>
                     <Anchor href="/servicios">
-                        <Box flex width='70%' elevation='small' direction="row" style={{ borderTopRightRadius: '14px', borderBottomLeftRadius: '14px', }} pad="small" background="status-ok">
+                        <Box flex style={{maxWidth:'360px'}} elevation='small' direction="row" round='small' pad="small" background="status-ok">
                             <FormNextLink color='light-1' size="medium" style={{ marginRight: '10px' }} />
-                            <Text color="light-1" style={{ fontWeight: 'bold' }} >Conoce nuestros servicios</Text>
+                            <Text color="light-1">Conoce nuestros servicios</Text>
                         </Box>
                     </Anchor>
                 </Box>
