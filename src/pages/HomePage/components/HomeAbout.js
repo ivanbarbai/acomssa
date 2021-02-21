@@ -1,10 +1,11 @@
 import React from 'react'
+import { Box, Text, Paragraph } from 'grommet'
 
 const HomeAbout = () => {
     return (
-        <div>
-            
-        </div>
+        <Box background='neutral-1' pad='large'>
+
+        </Box>
     )
 }
 

@@ -5,16 +5,33 @@ import React from 'react'
 import HomeBanner from './components/HomeBanner'
 import HomeExperience from './components/HomeExperience'
 import HomeServices from './components/HomeServices'
+import HomeAbout from './components/HomeAbout'
 
 //secondary components
+import { Motioned } from '../../components/framer/Styles'
+
+//motioned
+const containerVariants = {
+    hidden: {
+        opacity: 0.8,
+    },
+    visible: {
+        opacity: 1,
+    },
+    exit: {
+        opacity: 0.99,
+        
+    },
+}
 
 const HomePage = () => {
     return (
-        <>
+        <Motioned variants={containerVariants} initial='hidden' animate='visible' exit='exit' >
             <HomeBanner />
-            <HomeExperience />
             <HomeServices />
-        </>
+            <HomeAbout />
+            <HomeExperience />
+        </Motioned>
     )
 }
 

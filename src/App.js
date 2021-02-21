@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 //Components
 import Headed from './components/elements/Header';
 import Footed from './components/elements/Footer';
+import { Motioned } from './components/framer/Styles';
 
 //Pages
 import HomePage from './pages/HomePage/HomePage';
@@ -25,21 +26,21 @@ function App() {
 
   return (
     <Grommet theme={theme}>
-      <Headed />
-      <Main>
-        <Route
-          render={({ location }) => (
-            <AnimatePresence initial={false} exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter>
+        <Headed />
+        <Main>
+          <Route
+            render={({ location }) => (
               <Switch location={location} key={location.pathname}>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/nosotros" component={AboutPage} />
-                <Route path="/servicios" component={ServicesPage} />
+                <Route exact path="/" render={() => <HomePage />} />
+                <Route path="/nosotros" render={() => <AboutPage />} />
+                <Route path="/servicios" render={() => <ServicesPage />} />
                 <Route path="/contacto" component={ContactPage} />
               </Switch>
-            </AnimatePresence>
-          )} />
-      </Main>
-      <Footed />
+            )} />
+        </Main>
+        <Footed />
+      </AnimatePresence>
     </Grommet>
   );
 }
