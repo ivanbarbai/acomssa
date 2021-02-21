@@ -6,7 +6,6 @@ import { AnimatePresence } from 'framer-motion';
 //Components
 import Headed from './components/elements/Header';
 import Footed from './components/elements/Footer';
-import { Motioned } from './components/framer/Styles';
 
 //Pages
 import HomePage from './pages/HomePage/HomePage';
